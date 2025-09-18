@@ -45,3 +45,38 @@ Console.WriteLine($"Hero: {superHero3.Name}:{superHero3.Alias}");
 Console.WriteLine(superHero1);
 Console.WriteLine(superHero2);
 Console.WriteLine(superHero3);
+
+
+List<string> names = new List<string>();
+names.Add("Peter Parker");
+names.Add("Tony Stark");
+names.Add("Bruce Banner");
+
+foreach (var item in names)
+{
+    Console.WriteLine(item);
+}
+
+List<SuperHero> superHeroes = new List<SuperHero>();
+superHeroes.Add(superHero1);
+superHeroes.Add(superHero2);
+superHeroes.Add(superHero3);
+
+foreach (var hero in superHeroes)
+{
+    Console.WriteLine(hero);
+}
+
+List<SuperHero> dcHeroes = new List<SuperHero>()
+{
+    new SuperHero() { Name = "Bruce Wayne", Alias="Batman" , SpecialSkill="Reach"},
+    new SuperHero() { Name = "Clark Kent", Alias="Superman", SpecialSkill="Flying" },
+    new SuperHero() { Name = "Diane Prince", Alias="Wonder Woman", SpecialSkill="Speed" }
+
+};
+
+foreach (var hero in dcHeroes)
+{
+    Console.WriteLine(hero);
+}
+
